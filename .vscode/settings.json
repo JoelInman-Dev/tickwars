@@ -1,0 +1,6 @@
+{
+    "go.toolsEnvVars": {
+      "GOFLAGS": "-mod=mod"
+    }
+  }
+  

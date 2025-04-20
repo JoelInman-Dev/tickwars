@@ -1,0 +1,4 @@
+time=2025-04-20T23:49:01.620+01:00 level=INFO msg=hello!
+time="2025-04-21 00:03:42" level=INFO msg=hello!
+time="2025-04-21 00:04:28" level=INFO msg=hello! foo=bar
+time="2025-04-21 00:04:52" level=INFO msg=hello! foo=bar fee=0
