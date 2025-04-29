@@ -12,7 +12,7 @@ type Config struct {
 	DBConn  string // FATAL if not existing
 	AppUrl  string
 	AppName string
-	// Add more game-specific config here
+	// Add more game-specific config here later
 }
 
 // utilise the godotenv package so that my env file
@@ -36,11 +36,9 @@ func Load() *Config {
 	}
 }
 
-// helper function to read the .env file and assign
-// the values or uses the passed in fallback
+// helper function to read the .env file and assign the values or uses the passed in fallback
 func GetEnv(envKey, fallbackVal string) string {
-	// check if there is an environment variable
-	// set for this key and get the value.
+	// check if there is an environment variable set for this key and get the value.
 	// else return the fallback value
 	envValue, exists := os.LookupEnv(envKey)
 	if !exists || envValue == "" {

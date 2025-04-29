@@ -8,7 +8,7 @@ import (
 	"github.com/JoelInman-Dev/tickwars/configs"
 )
 
-// these are all the loggers currently setup, in their own files
+// these are all the log files currently setup, paths set in ENV
 type Loggers struct {
 	Player       *os.File
 	Event        *os.File
@@ -17,6 +17,7 @@ type Loggers struct {
 	UserActivity *os.File
 }
 
+// these are the actual log handlers which get called
 var (
 	PlayerLogger       *slog.Logger
 	EventLogger        *slog.Logger
@@ -71,26 +72,19 @@ func OpenLogFile(path string) (*os.File, error) {
 	return file, nil
 }
 
-func CloseLogFiles(LogFiles *Loggers) {
-	LogFiles.Player.Close()
-	LogFiles.Event.Close()
-	LogFiles.Error.Close()
-	LogFiles.Ticker.Close()
-	LogFiles.UserActivity.Close()
-}
-
 func InitLoggers(LogFiles *Loggers) {
-	// little formatter for the dates and times used in the loggers
-	// this converts the time attribute to Y-M-D H:i:s
+	// firstly, a little formatter for the dates and times used in the loggers
+	// this converts the time attribute to Y-M-D H:i:s as defaults are FUGLY!
 	dateTimeformatFunc := func(groups []string, attr slog.Attr) slog.Attr {
 		// customise the time formatting used in the logs
-		if attr.Key == slog.TimeKey {
+		// the KIND check is basically Slog's version of a type checker, to
+		//  ensure your editing the correct type of value
+		if attr.Key == slog.TimeKey && attr.Value.Kind() == slog.KindTime {
 			time := attr.Value.Time()
 			attr.Value = slog.StringValue(time.Format("2006-01-02 15:04:05"))
 		}
 		return attr
 	}
-
 	PlayerLogger = slog.New(slog.NewTextHandler(LogFiles.Player, &slog.HandlerOptions{
 		Level:       slog.LevelInfo,
 		ReplaceAttr: dateTimeformatFunc,
@@ -111,4 +105,23 @@ func InitLoggers(LogFiles *Loggers) {
 		Level:       slog.LevelInfo,
 		ReplaceAttr: dateTimeformatFunc,
 	}))
+}
+
+// Don't forget to clean yo shit up afterwards!
+func CloseLogFiles(LogFiles *Loggers) {
+	loggerFiles := []*os.File{
+		LogFiles.Player,
+		LogFiles.Event,
+		LogFiles.Error,
+		LogFiles.Ticker,
+		LogFiles.UserActivity,
+	}
+	// looping the logfiles to close them ensures that the full list
+	// of log files is processed in the loop and any errors are logged out
+	for _, file := range loggerFiles {
+		err := file.Close()
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "failed to close log file: %v\n", err)
+		}
+	}
 }

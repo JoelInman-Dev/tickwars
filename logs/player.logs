@@ -2,3 +2,14 @@ time=2025-04-20T23:49:01.620+01:00 level=INFO msg=hello!
 time="2025-04-21 00:03:42" level=INFO msg=hello!
 time="2025-04-21 00:04:28" level=INFO msg=hello! foo=bar
 time="2025-04-21 00:04:52" level=INFO msg=hello! foo=bar fee=0
+time="2025-04-21 00:16:55" level=INFO msg=hello! foo=bar fee=0
+time="2025-04-21 10:59:05" level=INFO msg=hello! foo=bar fee=0
+time="2025-04-21 10:59:33" level=INFO msg=hello! foo=bar fee=0
+time="2025-04-21 11:02:41" level=INFO msg=hello! foo=bar fee=0
+time="2025-04-21 11:03:59" level=INFO msg=hello! foo=bar fee=0
+time="2025-04-21 11:26:54" level=INFO msg=hello! foo=bar fee=0
+time="2025-04-21 11:27:47" level=INFO msg=hello! foo=bar fee=0
+time="2025-04-21 11:28:26" level=INFO msg=hello! foo=bar fee=0
+time="2025-04-21 11:29:41" level=INFO msg=hello! foo=bar fee=0
+time="2025-04-21 11:32:12" level=INFO msg=hello! foo=bar fee=0
+time="2025-04-21 11:32:20" level=INFO msg="Hello, first route working" Yee=Haw!

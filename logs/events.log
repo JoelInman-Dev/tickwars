@@ -1,0 +1,40 @@
+time="2025-04-21 00:16:55" level=INFO msg="App URL Loaded" APP_URL=https://tickwars.io
+time="2025-04-21 00:16:55" level=INFO msg="App Name Loaded" APP_NAME=TickWars
+time="2025-04-21 00:16:55" level=INFO msg="DB Connection established" DBCONN=bf75e0b897.db
+time="2025-04-21 00:16:55" level=INFO msg="Port Loaded" PORT=5000
+time="2025-04-21 10:59:05" level=INFO msg="App URL Loaded" APP_URL=https://tickwars.io
+time="2025-04-21 10:59:05" level=INFO msg="App Name Loaded" APP_NAME=TickWars
+time="2025-04-21 10:59:05" level=INFO msg="DB Connection established" DBCONN=bf75e0b897.db
+time="2025-04-21 10:59:05" level=INFO msg="Port Loaded" PORT=5000
+time="2025-04-21 10:59:33" level=INFO msg="App URL Loaded" APP_URL=http://localhost
+time="2025-04-21 10:59:33" level=INFO msg="App Name Loaded" APP_NAME=TickWars
+time="2025-04-21 10:59:33" level=INFO msg="DB Connection established" DBCONN=bf75e0b897.db
+time="2025-04-21 10:59:33" level=INFO msg="Port Loaded" PORT=5000
+time="2025-04-21 11:02:41" level=INFO msg="App URL Loaded" APP_URL=http://127.0.0.1
+time="2025-04-21 11:02:41" level=INFO msg="App Name Loaded" APP_NAME=TickWars
+time="2025-04-21 11:02:41" level=INFO msg="DB Connection established" DBCONN=bf75e0b897.db
+time="2025-04-21 11:02:41" level=INFO msg="Port Loaded" PORT=5000
+time="2025-04-21 11:03:59" level=INFO msg="App URL Loaded" APP_URL=127.0.0.1
+time="2025-04-21 11:03:59" level=INFO msg="App Name Loaded" APP_NAME=TickWars
+time="2025-04-21 11:03:59" level=INFO msg="DB Connection established" DBCONN=bf75e0b897.db
+time="2025-04-21 11:03:59" level=INFO msg="Port Loaded" PORT=5000
+time="2025-04-21 11:26:54" level=INFO msg="App URL Loaded" APP_URL=127.0.0.1
+time="2025-04-21 11:26:54" level=INFO msg="App Name Loaded" APP_NAME=TickWars
+time="2025-04-21 11:26:54" level=INFO msg="DB Connection established" DBCONN=bf75e0b897.db
+time="2025-04-21 11:26:54" level=INFO msg="Port Loaded" PORT=5000
+time="2025-04-21 11:27:47" level=INFO msg="App URL Loaded" APP_URL=127.0.0.1
+time="2025-04-21 11:27:47" level=INFO msg="App Name Loaded" APP_NAME=TickWars
+time="2025-04-21 11:27:47" level=INFO msg="DB Connection established" DBCONN=bf75e0b897.db
+time="2025-04-21 11:27:47" level=INFO msg="Port Loaded" PORT=5000
+time="2025-04-21 11:28:26" level=INFO msg="App URL Loaded" APP_URL=127.0.0.1
+time="2025-04-21 11:28:26" level=INFO msg="App Name Loaded" APP_NAME=TickWars
+time="2025-04-21 11:28:26" level=INFO msg="DB Connection established" DBCONN=bf75e0b897.db
+time="2025-04-21 11:28:26" level=INFO msg="Port Loaded" PORT=5000
+time="2025-04-21 11:29:41" level=INFO msg="App URL Loaded" APP_URL=127.0.0.1
+time="2025-04-21 11:29:41" level=INFO msg="App Name Loaded" APP_NAME=TickWars
+time="2025-04-21 11:29:41" level=INFO msg="DB Connection established" DBCONN=bf75e0b897.db
+time="2025-04-21 11:29:41" level=INFO msg="Port Loaded" PORT=5000
+time="2025-04-21 11:32:12" level=INFO msg="App URL Loaded" APP_URL=127.0.0.1
+time="2025-04-21 11:32:12" level=INFO msg="App Name Loaded" APP_NAME=TickWars
+time="2025-04-21 11:32:12" level=INFO msg="DB Connection established" DBCONN=bf75e0b897.db
+time="2025-04-21 11:32:12" level=INFO msg="Port Loaded" PORT=5000
